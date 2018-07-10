@@ -1,0 +1,35 @@
+{
+    "stocks":
+    [
+        {
+            "id": "1",
+            "company": "Agricultural Bank",
+            "code": "ADBL",
+            "group": "Commerical Bank"
+        },
+        {
+            "id": "2",
+            "company": "Nabil Bank",
+            "code": "NABIL",
+            "group": "Commerical Bank"
+        },
+        {
+            "id": "3",
+            "company": "NMB Microfinance",
+            "code": "NMBMF",
+            "group": "Microfinance"
+        },
+        {
+            "id": "4",
+            "company": "Manjushree Finance",
+            "code": "MFIL",
+            "group": "Finance"
+        },
+        {
+            "id": "5",
+            "company": "Nepal Life Insurance",
+            "code": "NLIC",
+            "group": "Insurance"
+        }
+    ]
+}

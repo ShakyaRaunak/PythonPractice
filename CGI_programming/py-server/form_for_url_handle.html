@@ -1,0 +1,111 @@
+<!-- form to test url get method in /cgi-bin/03_url_form_handle.py
+This html file cannot be executed inside cgi-bin folder.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form for URL Get</title>
+    <style type="text/css">
+        .container {
+            font-family: Arial, Verdana, serif;
+            position: absolute;
+            top: 30px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: 530px;
+            background-color: #ccc;
+            border-radius: 5px;
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .form .input-group, .form .label {
+            font-size: 14px;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form .text {
+            font-size: 12px;
+            width: 200px;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .form .dropdown {
+            font-size: 12px;
+            width: 200px;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .form .textarea {
+        }
+
+        .form .button {
+            background: #4db748;
+            color: #fff;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <form class="form" action="/cgi-bin/03_url_form_handle.py" method="post" enctype="multipart/form-data">
+        <div class="label">First Name:</div>
+        <div><input class="text" type="text" name="first_name"></div>
+        <br/>
+
+        <div class="label">Last Name:</div>
+        <div><input class="text" type="text" name="last_name"/></div>
+        <br/>
+
+        <div class="label">Language:</div>
+        <div class="input-group">
+            <input type="checkbox" id="chkpython" name="python" value="on"/>
+            <label for="chkpython">Python</label>
+        </div>
+        <div class="input-group">
+            <input type="checkbox" id='chkjava' name="java" value="on"/>
+            <label for="chkjava">Java</label></div>
+        <br/>
+
+        <div class="label">Gender:</div>
+        <div class="input-group">
+            <input type="radio" id="radmale" name="gender" value="Male"/>
+            <label for="radmale">Male</label>
+        </div>
+        <div class="input-group">
+            <input type="radio" id='radfemale' name="gender" value="Female"/>
+            <label for="radfemale">Female</label></div>
+        <br/>
+
+        <div class="input-group">
+            <select class="dropdown" name="education">
+                <option value="" selected>--- Select education ----</option>
+                <option value="Masters">Masters</option>
+                <option value="Bachelors">Bachelors</option>
+                <option value="Intermediate">Intermediate</option>
+            </select>
+        </div>
+        <br/>
+
+        <div class="input-group">File:
+            <input type="file" name="filename"/>
+        </div>
+        <br/>
+
+        <div class="label">Type your text below:</div>
+        <div class="input-group">
+            <textarea class="textarea" name="textcontent" cols="40" rows="4"></textarea>
+        </div>
+
+        <div><input class="button" type="submit" value="Submit"/></div>
+    </form>
+</div>
+</body>
+</html>
