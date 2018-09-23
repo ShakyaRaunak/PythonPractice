@@ -24,7 +24,7 @@ print(g('c'))  # 9
 
 
 # METHOD 3 :
-# Because Python has first-class functions they can be used to emulate switch/case statements.
+# Because Python has first-class functions, they can be used to emulate switch/case statements.
 def dispatch_if(operator, x, y):
     if operator == 'add':
         return x + y

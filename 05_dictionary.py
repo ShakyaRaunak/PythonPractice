@@ -61,7 +61,7 @@ print(data.get('Email'))  # None
 
 # merge two dictionaries (with duplicate keys)
 dict1 = {'name': 'Inception', 'name': 'The Departed', 'collection': '$500 million'}
-dict2 = {'actor': 'Leonardo Di Caprio', 'actress': 'Marion Cortillard', 'actress': 'Ellen Page'}
+dict2 = {'actor': 'Leonardo DiCaprio', 'actress': 'Marion Cotillard', 'actress': 'Ellen Page'}
 z = {**dict1, **dict2}
 # {'name': 'The Departed', 'collection': '$500 million', 'actor': 'Leonardo Di Caprio', 'actress': 'Ellen Page'}
 print(z)

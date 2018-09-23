@@ -3,9 +3,9 @@
 
 a = [1, 2, 3]
 b = a
-print(a == b) # True
-print(a is b) # True
+print(a == b)  # True
+print(a is b)  # True
 
-c = list(a) # we create an identical copy of our list object
-print(a == c) # True
-print(a is c) # False because c and a are pointing to two different objects, even though their contents might be the same.
+c = list(a)  # we create an identical copy of our list object
+print(a == c)  # True
+print(a is c)  # False because c and a are pointing to two different objects, even though their contents are the same.

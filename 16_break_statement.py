@@ -4,6 +4,6 @@ for i in [1, 2, 3, 4, 5]:
         break
     print(i)
 
-import sys;
+import sys
 
 print('Python %s on %s' % (sys.version, sys.platform))
