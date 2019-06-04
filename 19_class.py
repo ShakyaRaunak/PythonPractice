@@ -5,7 +5,7 @@
 """
 
 
-class Student:
+class Student:  # class Student(): works too
     "This is a student class"
 
     def __init__(self, rollno, name):

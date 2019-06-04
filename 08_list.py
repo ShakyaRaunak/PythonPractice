@@ -81,3 +81,7 @@ print(data3)  # [50, 40, 30, 20, 10]
 
 data3.sort()
 print(data3)  # [10, 20, 30, 40, 50]
+
+numbers = [1, 2, 3, 4, 5]
+for n in numbers:
+    print(n, )
